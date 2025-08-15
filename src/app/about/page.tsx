@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Award, Users, Heart } from 'lucide-react';
 
 export default function AboutPage() {
