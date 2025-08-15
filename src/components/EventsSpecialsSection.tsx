@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { Calendar, Clock, Star, Users } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 
 const events = [
   {
@@ -183,7 +183,7 @@ export default function EventsSpecialsSection() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-lg text-[#6B7280] mb-6">
-            Don't miss out on our exclusive events and special offers
+            Don&apos;t miss out on our exclusive events and special offers
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

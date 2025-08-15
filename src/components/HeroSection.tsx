@@ -8,13 +8,13 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          src="/hero.jpg"
           alt="Restaurant interior"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-gray-900/80 via-gray-800/70 to-gray-700/60"></div> 
+        <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-gray-900/70 via-gray-800/40 to-gray-700/30"></div> 
       </div>
 
       {/* Content Container */}

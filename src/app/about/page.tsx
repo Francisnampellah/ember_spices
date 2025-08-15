@@ -58,12 +58,12 @@ export default function AboutPage() {
                   creating dishes that are both familiar and excitingly new.
                 </p>
                 <p>
-                  Located on Mwai Kibaki Road, we've become a beloved destination for food lovers seeking exceptional 
+                  Located on Mwai Kibaki Road, we&apos;ve become a beloved destination for food lovers seeking exceptional 
                   quality and service. Our 4.9-star rating reflects our commitment to excellence in every aspect of 
                   the dining experience.
                 </p>
                 <p>
-                  We believe that great food is about more than just taste—it's about creating a moody, vibey atmosphere 
+                  We believe that great food is about more than just taste—it&apos;s about creating a moody, vibey atmosphere 
                   where every guest feels welcome. From our signature beef kababs to our iconic Alcove Special Paneer, 
                   every dish tells a story of passion and culinary mastery.
                 </p>
@@ -141,7 +141,7 @@ export default function AboutPage() {
               What Our Guests Say
             </h2>
             <p className="text-lg text-[#6B7280] max-w-2xl mx-auto">
-              Don't just take our word for it - hear from our valued guests
+              Don&apos;t just take our word for it - hear from our valued guests
             </p>
           </div>
 
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-[#134E4A] mb-6 italic leading-relaxed">
-                "Loved everything about this place, been to lots of Indian restaurant in Dar es salam but this one just outplay all the restaurant when it comes to quality of food and services."
+                &ldquo;Loved everything about this place, been to lots of Indian restaurant in Dar es salam but this one just outplay all the restaurant when it comes to quality of food and services.&rdquo;
               </p>
               <div className="text-sm text-[#6B7280]">
                 - Satisfied Customer
@@ -171,7 +171,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <p className="text-[#134E4A] mb-6 italic leading-relaxed">
-                "Excellent Indian restaurant with great food quality and service. The beef kababs are crispy, juicy, and have that perfect home-style comfort food feel."
+                &ldquo;Excellent Indian restaurant with great food quality and service. The beef kababs are crispy, juicy, and have that perfect home-style comfort food feel.&rdquo;
               </p>
               <div className="text-sm text-[#6B7280]">
                 - Happy Guest
@@ -230,18 +230,18 @@ export default function AboutPage() {
             Reserve your table today and become part of our story.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            <Link 
               href="/reservations" 
               className="bg-[#0F766E] text-white px-8 py-4 font-medium hover:bg-[#14B8A6] transition-all duration-300 transform hover:scale-105 text-lg"
             >
               Make Reservation
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/menu" 
               className="border-2 border-[#0F766E] text-[#0F766E] px-8 py-4 font-medium hover:bg-[#0F766E] hover:text-white transition-all duration-300 text-lg"
             >
               View Menu
-            </a>
+            </Link>
           </div>
         </div>
       </section>

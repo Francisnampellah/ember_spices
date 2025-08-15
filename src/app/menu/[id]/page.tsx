@@ -28,7 +28,7 @@ export default async function MenuItemPage({ params }: { params: Promise<{ id: s
               Menu Item Not Found
             </h1>
             <p className="text-lg text-[#6B7280] mb-8">
-              The menu item you're looking for doesn't exist.
+              The menu item you&apos;re looking for doesn&apos;t exist.
             </p>
             <Link href="/menu" className="bg-[#0F766E] text-white px-6 py-3 font-medium hover:bg-[#14B8A6] transition-colors duration-300">
               Back to Menu

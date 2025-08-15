@@ -1,6 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { Calendar, Clock, Users, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 
 export default function ReservationsPage() {
   return (

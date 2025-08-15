@@ -16,7 +16,7 @@ export default function ContactPage() {
               Contact Us
             </h1>
             <p className="text-xl text-[#6B7280] max-w-3xl mx-auto leading-relaxed">
-              Get in touch with us for reservations, questions, or just to say hello. We're here to serve you the best Indian fusion cuisine in Dar es Salaam.
+              Get in touch with us for reservations, questions, or just to say hello. We&apos;re here to serve you the best Indian fusion cuisine in Dar es Salaam.
             </p>
           </div>
         </div>
