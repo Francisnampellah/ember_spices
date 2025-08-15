@@ -11,29 +11,30 @@ export default function HeroSection() {
           src="/hero.jpg"
           alt="Restaurant interior"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           priority
+          sizes="100vw"
         />
         <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-gray-900/70 via-gray-800/40 to-gray-700/30"></div> 
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-screen">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-screen py-20 lg:py-0">
           {/* Left Side - Text Content */}
-          <div className="text-white">
+          <div className="text-white text-center lg:text-left">
             {/* Breadcrumbs */}
             <div className="text-sm text-gray-300 mb-6">
               RESTAURANTS &gt; INDIAN FUSION
             </div>
             
             {/* Main Headline */}
-            <h1 className="text-5xl lg:text-7xl font-playfair font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-playfair font-bold mb-6 leading-tight">
               EMBER & SPICE
             </h1>
             
             {/* Sub-headline */}
-            <p className="text-xl lg:text-2xl mb-8 text-gray-200 max-w-lg leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-gray-200 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               Experience bold Indian fusion flavors in Dar es Salaam. Moody, vibey atmosphere with exceptional food quality and service.
             </p>
             
