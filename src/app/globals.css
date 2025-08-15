@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+  
+  /* Restaurant Color Palette - Teal Blue Theme */
+  --color-primary: #0F766E; /* Teal-700 */
+  --color-secondary: #14B8A6; /* Teal-500 */
+  --color-accent: #F59E0B; /* Amber-500 - warm accent */
+  --color-dark: #134E4A; /* Teal-900 */
+  --color-light: #F0FDFA; /* Teal-50 */
+  --color-white: #FFFFFF;
+  --color-gray: #6B7280;
+  --color-warm: #FEF3C7; /* Amber-100 - warm background */
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter);
+}
+
+body {
+  color: var(--color-dark);
+  background: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair);
+  font-weight: 600;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-[#0F766E] text-white px-8 py-3 font-medium hover:bg-[#14B8A6] transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply border-2 border-[#0F766E] text-[#0F766E] px-8 py-3 font-medium hover:bg-[#0F766E] hover:text-white transition-all duration-300;
+}
+
+/* Hero section styles */
+.hero-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(19, 78, 74, 0.3),
+    rgba(19, 78, 74, 0.7)
+  );
+}
+
+/* Menu card hover effects */
+.menu-card {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-2;
+}
+
+/* Sticky navigation */
+.sticky-nav {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade in animation */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
