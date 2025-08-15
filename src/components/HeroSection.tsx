@@ -7,14 +7,8 @@ export default function HeroSection() {
     <section className="relative h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
-          src="/hero.jpg"
-          alt="Restaurant interior"
-          fill
-          className="object-cover object-center"
-          priority
-          sizes="100vw"
-        />
+        <div className="w-full h-full bg-cover bg-center bg-no-repeat bg-[url('/mob.jpg')] lg:bg-[url('/hero.jpg')]">
+        </div>
         <div className="absolute bottom-0 left-0 right-0 h-full bg-gradient-to-t from-gray-900/70 via-gray-800/40 to-gray-700/30"></div> 
       </div>
 
