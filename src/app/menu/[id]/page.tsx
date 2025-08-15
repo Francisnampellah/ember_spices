@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { ArrowLeft, Clock, Users } from 'lucide-react';
 import { menuItems } from '@/components/MenuSection';
 
-export default function MenuItemPage({ params }: { params: { id: string } }) {
+export default async function MenuItemPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  
   // Flatten all menu items to search by ID
   const allMenuItems = [
     ...menuItems.appetizers,
@@ -14,7 +16,7 @@ export default function MenuItemPage({ params }: { params: { id: string } }) {
     ...menuItems.beverages
   ];
   
-  const menuItem = allMenuItems.find(item => item.id === params.id);
+  const menuItem = allMenuItems.find(item => item.id === id);
 
   if (!menuItem) {
     return (
